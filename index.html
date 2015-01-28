@@ -54,7 +54,20 @@ var fileref=document.createElement("script");fileref.defer=!0;fileref.setAttribu
       CDNPlayer("my-video-player", 339256459, "339256459/dummy.mp4", {width:640, height:360} );
       </script>
 
-
+<script type='text/javascript' src='http://jessietang.aiskacang.com/longtail/jwplayer.js'></script>
+        <h1>EXTERNAL LIVE RTMP</h1>                                             
+        <div id='mediaspace1'>This text will be replaced</div>                     
+                                                                                   
+        <script type='text/javascript'>                                            
+          jwplayer('mediaspace1').setup({                                          
+            'flashplayer': 'http://jessietang.aiskacang.com/longtail/player.swf',
+            'file': 'mp4:339256459/dummy.mp4',                                     
+            'streamer': 'rtmp://574864282.e.339256459.r.cdntest-jedi.info/339256459/_definst_',
+            'controlbar': 'bottom',                                             
+            'width': '470',                                                     
+            'height': '290'                                                        
+          });                                                                      
+        </script>       
 
 
     
