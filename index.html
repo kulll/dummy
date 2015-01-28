@@ -1,87 +1,27 @@
-<!DOCTYPE html>
-<html>
-
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Dummy : ">
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-    <script>
-var fileref=document.createElement("script");fileref.defer=!0;fileref.setAttribute("type","text/javascript");fileref.setAttribute("src","http://cdn.onapp.com/dashboard/flowplayer/flowplayer-3.2.11.min.js");document.getElementsByTagName("head")[0].appendChild(fileref); DeviceDetection=function(b){this.construct=function(a){"undefined"==typeof a&&(a=navigator.userAgent);this.ua=a;this.checks={iphone:Boolean(a.match(/iPhone/)),ipod:Boolean(a.match(/iPod/)),ipad:Boolean(a.match(/iPad/)),blackberry:Boolean(a.match(/BlackBerry/)),playbook:Boolean(a.match(/PlayBook/)),android:Boolean(a.match(/Android/)),macOS:Boolean(a.match(/Mac OS X/)),win:Boolean(a.match(/Windows/)),mac:Boolean(a.match(/Macintosh/)),wphone:Boolean(a.match(/(Windows Phone OS|Windows CE|Windows Mobile)/)), mobile:Boolean(a.match(/Mobile/)),androidTablet:Boolean(a.match(/Android/) && !a.match(/Mobile/)),tabletPc:Boolean(a.match(/Tablet PC/)),palmDevice:Boolean(a.match(/(PalmOS|PalmSource| Pre\/)/)),kindle:Boolean(a.match(/(Kindle)/)),otherMobileHints:Boolean(a.match(/(Opera Mini|IEMobile|SonyEricsson|smartphone)/))}};this.isTouchDevice=function(){return this.checks.iphone||this.checks.ipod||this.checks.ipad};this.isApple=function(){return this.checks.iphone||this.checks.ipod||this.checks.ipad||this.checks.macOS|| this.checks.mac};this.isIOS=function(){return this.checks.iphone||this.checks.ipod||this.checks.ipad};this.isBlackberry=function(){return this.checks.blackberry};this.isAndroid=function(){return this.checks.android};this.isTablet=function(){return this.checks.ipad||this.checks.tabletPc||this.checks.playbook||this.checks.androidTablet||this.checks.kindle};this.isDesktop=function(){return!this.isTouchDevice()&&!this.isSmartPhone()&&!this.isTablet()};this.isSmartPhone=function(){return(this.checks.mobile|| this.checks.blackberry||this.checks.palmDevice||this.checks.otherMobileHints)&&!this.isTablet()&&!this.checks.ipod};this.construct(b);return this};video_urls="";CDNPlayerCallBack=function(b){video_urls=b}; CDNPlayer=function(b,a,d,c){redirector="video.worldcdn-beta.net";detection=DeviceDetection();box=document.getElementById(b);extension=d.substr(-4).toLowerCase();isVod=".mp4"==extension||".flv"==extension;this.params={width:320,height:200,autoplay:!1,live:!1};"object"==typeof c&&(c.width&&(this.params.width=c.width),c.height&&(this.params.height=c.height),c.autoplay&&(this.params.autoplay=c.autoplay),c.live&&(this.params.live=c.live));detection.isDesktop()||(d="_definst_/"+d);if(detection.isIOS())newid= b+"-video",str='<video id="'+newid+'" controls ',this.params.autoplay&&(str+="autoplay "),str+='src="http://'+redirector+"/"+a+"/"+d+'.m3u8" ',str+='style="display:block; width:'+this.params.width+"px; height:"+this.params.height+'px">',str+="Your browser does not support the video tag</video>",box.innerHTML=str,this.params.autoplay&&document.getElementById(newid).play();else if(detection.isAndroid()){newid=b+"-video";url="http://"+redirector+"/"+a+"/"+d+".jsonp";url+="?android-buster="+Math.random(); b=document.createElement("script");b.defer=!0;b.setAttribute("type","text/javascript");b.setAttribute("src",url+"&callback=CDNPlayerCallBack");document.getElementsByTagName("head")[0].appendChild(b);var e=function(){if(""==video_urls)setTimeout(e,10);else if(url=video_urls.rtsp,video_urls="",str='<video id="'+newid+'"controls ',this.params.autoplay&&(str+="autoplay "),str+='src="'+url+'" ',str+='style="display:block; width:'+this.params.width+"px; height:"+this.params.height+'px">',str+="Your browser does not support the video tag</video>", box.innerHTML=str,this.params.autoplay){for(newtag=document.getElementById(newid);"undefined"==typeof newtag;)newtag=document.getElementById(newid);newtag.play();alert("requested to play")}};e()}else if(detection.isDesktop()){newid=b+"-a";str='<a href="http://'+redirector+"/"+a+"/"+d+'.smil" ';str+='style="display:block; width:'+this.params.width+"px; height:"+this.params.height+'px" ';str+='id="'+newid+'"></a>';box.innerHTML=str;var g=function(){flowplayer(newid,"http://cdn.onapp.com/dashboard/flowplayer/flowplayer-3.2.15.swf", {plugins:{smil:{url:"flowplayer.smil-3.2.8.swf"},rtmp:{url:"http://releases.flowplayer.org/flowplayer.rtmp/flowplayer.rtmp-3.2.13.swf"}},clip:{provider:"rtmp",autoPlay:this.params.autoplay,live:this.params.live}})},f=function(){"undefined"==typeof flowplayer?setTimeout(f,10):g()};f()}return this};
-
-
-      
-    </script>
-
-
-    <title>Dummy</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/kulll/dummy">View on GitHub</a>
-
-          <h1 id="project_title">Dummy</h1>
-          <h2 id="project_tagline"></h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/kulll/dummy/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/kulll/dummy/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a id="hotline-test" class="anchor" href="#hotline-test" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hotline Test</h3>
-
-<p><img src="http://567762009.r.cdntest-jedi.info/images/04-2.jpg" alt=""></p>
-      </section>
-    </div>
-
-
-
-
-    <div id="my-video-player">
-    </div>
-    <script type="text/javascript">
-      CDNPlayer("my-video-player", 339256459, "339256459/dummy.mp4", {width:640, height:360} );
-      </script>
-
-<script type='text/javascript' src='http://jessietang.aiskacang.com/longtail/jwplayer.js'></script>
-        <h1>EXTERNAL LIVE RTMP</h1>                                             
-        <div id='mediaspace1'>This text will be replaced</div>                     
+<!DOCTYPE html>                                                                 
+<html>                                                                          
+    <head>                                                                      
+<!-- 1. skin -->                                                                
+<link rel="stylesheet" href="http://releases.flowplayer.org/5.5.2/skin/minimalist.css">
+                                                                                
+<!-- 2. jquery library -->                                                      
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>             
+                                                                                
+<!-- 3. flowplayer -->                                                          
+<script src="http://releases.flowplayer.org/5.5.2/flowplayer.min.js"></script>  
+    </head>                                                                     
+                                                                                
+<body>                                                                          
+                                                                                
+<!-- flowplayer with RTMP configuration option -->                              
+<div class="flowplayer" data-rtmp="rtmp://574864282.e.339256459.r.cdntest-jedi.info/339256459/_definst_">
+                                                                                
+  <video>                                                                       
+    <!-- consumed by flash -->                                                  
+    <source type="video/flash" src="mp4:339256459/dummy.mp4">                   
                                                                                    
-        <script type='text/javascript'>                                            
-          jwplayer('mediaspace1').setup({                                          
-            'flashplayer': 'http://jessietang.aiskacang.com/longtail/player.swf',
-            'file': 'mp4:339256459/dummy.mp4',                                     
-            'streamer': 'rtsp://339256459.r.cdntest-jedi.info/339256459/_definst_',
-            'controlbar': 'bottom',                                             
-            'width': '470',                                                     
-            'height': '290'                                                        
-          });                                                                      
-        </script>       
-
-
-    
-    
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Dummy maintained by <a href="https://github.com/kulll">kulll</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
-  </body>
-</html>
+    <!-- consumed by html5 video tag -->                                           
+  </video>                                                                         
+</div>                                                                             
+</body>                                                                            
+</html>   
