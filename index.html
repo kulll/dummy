@@ -1,14 +1,7 @@
 <!DOCTYPE html>                                                                 
 <html>                                                                          
-    <head>                                                                      
-<!-- 1. skin -->                                                                
-<link rel="stylesheet" href="http://releases.flowplayer.org/5.5.2/skin/minimalist.css">
-                                                                                
-<!-- 2. jquery library -->                                                      
-<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>             
-                                                                                
-<!-- 3. flowplayer -->                                                          
-<script src="http://releases.flowplayer.org/5.5.2/flowplayer.min.js"></script>  
+    <head>                                                                 
+
         <style>
         .flowplayer {                                                           
        width: 600px;                                                            
@@ -19,17 +12,29 @@
 
     </head>                                                                     
                                                                                 
-<body>                                                                          
+<body>            
+    <script>
+         flowplayer("player", "http://releases.flowplayer.org/swf/flowplayer-3.2.18.swf", {
+    // this will enable pseudostreaming support
+    plugins: {
+        pseudo: {
+            url: "flowplayer.pseudostreaming-3.2.13.swf"
+        }
+    },
+ 
+    // clip properties
+    clip: {
+ 
+        // our clip uses pseudostreaming
+        provider: 'pseudo',
+ 
+        url: 'http://793823090.r.cdntest-jedi.info/sgc_trf_4_2014_ana_judiciario_direito_civil_parte_especial_01.mp4'
+    }
+ 
+});
+</script>
+         
                                                                                 
-<!-- flowplayer with RTMP configuration option -->                              
-<div class="flowplayer">
-                                                                                
-  <video>                                                                       
-    <!-- consumed by flash -->                                                  
-        <source type="video/mp4" src="http://793823090.r.cdntest-jedi.info/sgc_trf_4_2014_ana_judiciario_direito_civil_parte_especial_01.mp4"/>
-                                                                                   
-    <!-- consumed by html5 video tag -->                                           
-  </video>                                                                         
-</div>                                                                             
+                                                                           
 </body>                                                                            
 </html>   
