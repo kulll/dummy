@@ -1,7 +1,7 @@
 <!DOCTYPE html>                                                                 
 <html>                                                                          
     <head>                                                                 
-
+<script type="text/javascript" src="flowplayer/flowplayer-3.2.13.min.js"></script>
         <style>
         .flowplayer {                                                           
        width: 600px;                                                            
@@ -16,8 +16,10 @@
     <div id="player"></div>
 
 
-    <script>
-         flowplayer("player", "http://releases.flowplayer.org/swf/flowplayer-3.2.18.swf", {
+    <script language="JavaScript">
+
+   
+         flowplayer("player", "flowplayer/flowplayer-3.2.18.swf", {
     // this will enable pseudostreaming support
     plugins: {
         pseudo: {
